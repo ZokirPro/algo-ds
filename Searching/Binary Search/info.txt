@@ -1,1 +1,1 @@
-1. [Binary search implementation](https://leetcode.com/problems/binary-search/)
+1. [Binary search implementation] (https://leetcode.com/problems/binary-search/)

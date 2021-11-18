@@ -3,7 +3,7 @@
 2. [**Visualization of Binary Search**](https://www.youtube.com/watch?v=sr_bR1WwcLY)
 2. [**Binary search implementation**](https://leetcode.com/problems/binary-search/)
 
-#HOMEWORK
+# HOMEWORK
 
 1. [**https://leetcode.com/problems/first-bad-version**](https://leetcode.com/problems/first-bad-version/)
 2. [**Search in Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array/)

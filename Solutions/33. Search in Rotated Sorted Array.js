@@ -3,35 +3,34 @@
  * @param {number} target
  * @return {number}
  */
-const BinarySearch = (nums, target, start, end) => {
-    let mid = Math.floor((start + end) / 2)
-
-    if (start > end) return -1
-
-    if (nums[mid] == target) return mid
-
-    if (nums[mid] > target)
-        return BinarySearch(nums, target, start, mid - 1)
-    else
-        return BinarySearch(nums, target, mid + 1, end)
-}
 var search = function (nums, target) {
+    let n = nums.length
+    let low = 0
+    let high = n - 1
+    while (low <= high) {
 
-    let min = nums[0]
-    let min_i = 0
-    for (let i = 1; i < nums.length; i++)
-        if (min > nums[i]) {
-            min = nums[i]
-            min_i = i
+        let mid = Math.floor((low + high) / 2)
+
+        //check if the current element is target
+        if (nums[mid] == target)
+            return mid
+
+        //if element at mid is higher than element at low
+        else if (nums[low] <= nums[mid]) {
+            //if target element lies in non-rotated search subarray
+            if (target >= nums[low] && target < nums[mid])
+                high = mid - 1
+            else
+                low = mid + 1
+        } else {
+
+            if (target > nums[mid] && target <= nums[high]) {
+
+                low = mid + 1
+            }
+            else
+                high = mid - 1
         }
-
-    let index_1 = BinarySearch(nums, target, 0, min_i - 1)
-    let index_2 = BinarySearch(nums, target, min_i, nums.length - 1)
-
-    if (index_1 != -1)
-        return index_1
-    else if (index_2 != -1)
-        return index_2
-    else
-        return -1
+    }
+    return -1
 };

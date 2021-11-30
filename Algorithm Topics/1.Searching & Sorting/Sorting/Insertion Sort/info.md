@@ -1,7 +1,7 @@
 ## START
 
 1. [**Visualization of Insertion Sort**](https://youtu.be/OGzPmgsI-pQ)
-2. [**Exponential search implementation**](https://www.geeksforgeeks.org/insertion-sort/)
+2. [**Insertion sort implementation**](https://www.geeksforgeeks.org/insertion-sort/)
 
 ## HOMEWORK
 
